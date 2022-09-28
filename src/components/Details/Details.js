@@ -1,4 +1,5 @@
 import React from 'react';
+import toast from 'react-hot-toast';
 
 const Details = ({breakTime,duration}) => {
     
@@ -20,7 +21,7 @@ const Details = ({breakTime,duration}) => {
                     </div>
                     
                 </div>
-                <button className="btn mt-3 flex justify-center items-center w-full">Activity Completed</button>     
+                <button onClick={()=> toast.success('Activity Successfully Completed!')} className="btn mt-3 flex justify-center items-center w-full">Activity Completed</button>     
             </div>
         </div>
          
