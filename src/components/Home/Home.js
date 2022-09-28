@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import logo from '../../images/fitx.png';
 import Activity from '../Activity/Activity';
+import ActivityMonitor from '../ActivityMonitor/ActivityMonitor';
 
 const Home = () => {
 
@@ -31,20 +32,20 @@ const Home = () => {
 
     return (
         <div>
-            <div className='lg:grid lg:grid-cols-12 container mx-auto'>
-               <div className='flex text-5xl items-center container mx-12 my-5'>
+            <div className='lg:grid lg:grid-cols-12 grid grid-cols-1 mx-5'>
+               <div className='flex text-5xl items-center container mx-5 my-5'>
                     <img src={logo} alt="" />
                     <FontAwesomeIcon icon={faDumbbell} />
                </div>
-                <div className='col-start-1 col-end-8 container'>
-                    <div className='lg:grid lg:grid-cols-3 lg:gap-5 grid grid-cols-1 lg:mx-12 lg:p-0 px-5'>
+                <div className='col-start-1 col-end-8'>
+                    <div className='lg:grid lg:grid-cols-3 lg:gap-2 grid grid-cols-1 lg:mx-12 lg:p-0 px-5'>
                         {
                             activities.map(activity => <Activity key={activity._id} activity={activity}/>)
                         }
                     </div>
                 </div>
-                <div className='col-start-9 col-end-12'>
-                    <h1>Personal Info</h1>
+                <div className='col-start-8 col-end-12'>
+                    <ActivityMonitor/>
                 </div>
             </div>
         </div>
