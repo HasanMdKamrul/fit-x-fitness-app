@@ -7,6 +7,9 @@ const ActivityMonitor = ({duration}) => {
 
     const [breakTime,setBreakTime] = useState(0);
 
+
+    const breakTimes = [10,20,30,40];
+
     const handleBreak = (time)=>{
         
         setBreakTime(time);
@@ -27,7 +30,7 @@ const ActivityMonitor = ({duration}) => {
             {/* Personal info */}
             <PersonalInfo/>
             {/* Add A break */}
-            <AddABreak handleBreak={handleBreak}/>
+            <AddABreak breakTimes={breakTimes} handleBreak={handleBreak}/>
             {/* Excercise details */}
             <Details breakTime={breakTime} duration={duration}/>
             {/* ** Activity completed button */}

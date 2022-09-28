@@ -1,15 +1,15 @@
 import React from 'react';
+import BreakButtons from '../BreakButtons/BreakButtons';
 
-const AddABreak = ({handleBreak}) => {
+const AddABreak = ({breakTimes,handleBreak}) => {
     return (
         <div className='flex justify-center mt-5'>
            <div className='border px-8 py-6 shadow-xl rounded-2xl'>
                 <h1 className='text-3xl mb-2'>Add A Break</h1>
                 <div className="btn-group">
-                    <button  onClick={()=>handleBreak(10)}  className="btn btn-lg">10s</button>
-                    <button  onClick={()=>handleBreak(20)}  className="btn btn-lg btn-active">20s</button>
-                    <button  onClick={()=>handleBreak(30)} className="btn btn-lg">30s</button>
-                    <button  onClick={()=>handleBreak(40)}  className="btn btn-lg">40s</button>
+                    {
+                        breakTimes.map((time,index)=> <BreakButtons key={index} handleBreak={handleBreak} time={time}/>)
+                    }
                 </div>
             </div>
         </div>
