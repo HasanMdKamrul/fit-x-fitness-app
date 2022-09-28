@@ -3,7 +3,7 @@ import AddABreak from '../AddABreak/AddABreak';
 import Details from '../Details/Details';
 import PersonalInfo from '../PersonalInfo/PersonalInfo';
 
-const ActivityMonitor = () => {
+const ActivityMonitor = ({duration}) => {
     return (
         <div className='h-screen'>
             {/* Personal info */}
@@ -11,7 +11,7 @@ const ActivityMonitor = () => {
             {/* Add A break */}
             <AddABreak/>
             {/* Excercise details */}
-            <Details/>
+            <Details duration={duration}/>
             {/* ** Activity completed button */}
         </div>
     );

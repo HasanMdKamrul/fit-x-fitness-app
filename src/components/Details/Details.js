@@ -1,6 +1,9 @@
 import React from 'react';
 
-const Details = () => {
+const Details = ({duration}) => {
+    
+    const totalTime = duration.reduce((previousValue,currentValue)=> previousValue + currentValue,0)
+
     return (
      <div>
            <div className='flex justify-center mt-3'>
@@ -9,7 +12,7 @@ const Details = () => {
                 <div className="stats shadow text-center mt-2">
                     <div className="stat">
                         <div className="stat-title">Excercise Time</div>
-                        <div className="stat-value">89,400 s</div>
+                        <div className="stat-value">{totalTime}s</div>
                     </div>
                     <div className="stat">
                         <div className="stat-title">Break Time</div>
