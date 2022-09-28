@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import AddABreak from '../AddABreak/AddABreak';
 import Details from '../Details/Details';
 import PersonalInfo from '../PersonalInfo/PersonalInfo';
@@ -12,7 +12,14 @@ const ActivityMonitor = ({duration}) => {
         setBreakTime(time);
 
         // ** set the break time to ls
-    }
+        localStorage.setItem('breaktime',JSON.stringify(time));
+    };
+
+    useEffect(()=>{
+        // ** get data from ls
+        const getTime = localStorage.getItem('breaktime');
+        setBreakTime(getTime)
+    },[breakTime])
 
     
     return (
