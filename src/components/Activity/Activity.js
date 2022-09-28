@@ -10,12 +10,12 @@ const Activity = ({handleAddToList,activity,activity:{name,time,picture}}) => {
                 <figure><img className='w-full h-fit' src={picture} alt="" /></figure>
                 <div className="card-body w-fit h-fit">
                     <h2 className="card-title text-cyan-400">{name}</h2>
-                    <p>Activity Duration: {time} s</p>
+                    <p>Activity Duration: {time} Min</p>
                     <div className="card-actions justify-end">
                         <button onClick={()=>{
                             handleAddToList(activity);
                             setToggle(true);
-                        }} className={toggle?"btn btn-secondary w-full":"btn btn-primary w-full"}>{toggle ? "Added" :"Add To List"}</button>
+                        }} className={toggle?"btn btn-primary w-full":"btn btn-secondary w-full"}>{toggle ? "Added" :"Add To List"}</button>
                     </div>
                 </div>
             </div>
@@ -24,3 +24,4 @@ const Activity = ({handleAddToList,activity,activity:{name,time,picture}}) => {
 };
 
 export default Activity;
+
