@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Activity = ({handleAddToList,activity,activity:{name,time,picture}}) => {
-    // console.log(activity)
+    
+    const [toggle,setToggle] = useState(false);
+
     return (
         <div>
             <div className="card card-compact bg-base-100 shadow-2xl w-full h-full">
@@ -10,7 +12,10 @@ const Activity = ({handleAddToList,activity,activity:{name,time,picture}}) => {
                     <h2 className="card-title text-cyan-400">{name}</h2>
                     <p>Activity Duration: {time} s</p>
                     <div className="card-actions justify-end">
-                        <button onClick={()=>handleAddToList(activity)} className="btn btn-secondary">Add To List</button>
+                        <button onClick={()=>{
+                            handleAddToList(activity);
+                            setToggle(true);
+                        }} className={toggle?"btn btn-secondary w-full":"btn btn-primary w-full"}>{toggle ? "Added" :"Add To List"}</button>
                     </div>
                 </div>
             </div>
