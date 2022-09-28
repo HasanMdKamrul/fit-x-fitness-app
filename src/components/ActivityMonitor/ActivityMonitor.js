@@ -23,7 +23,7 @@ const ActivityMonitor = ({duration}) => {
 
     
     return (
-        <div className='h-screen'>
+        <div>
             {/* Personal info */}
             <PersonalInfo/>
             {/* Add A break */}
