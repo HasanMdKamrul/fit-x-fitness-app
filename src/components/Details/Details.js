@@ -17,7 +17,7 @@ const Details = ({breakTime,duration}) => {
                     </div>
                     <div className="stat">
                         <div className="stat-title">Break Time</div>
-                        <div className="stat-value">{breakTime}s</div>
+                        <div className="stat-value">{breakTime ? breakTime : 0}s</div>
                     </div>
                     
                 </div>
