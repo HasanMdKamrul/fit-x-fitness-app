@@ -10,8 +10,8 @@ const PersonalInfo = () => {
                 </div>
                 <h1 className='font-semibold text-gray-300 ml-2'>Md Kamrul Hasan</h1>
             </div>
-            <div className='flex justify-center mt-2'>
-                <div className="stats stats-vertical shadow">
+            <div className='flex justify-center mt-2 items-center'>
+                <div className="stats stats-vertical shadow ">
                     <div className="stat">
                         <div className="stat-title">Favourite Activity</div>
                         <div className="stat-value">Cycling</div>

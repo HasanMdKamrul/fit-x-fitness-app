@@ -26,7 +26,7 @@ const ActivityMonitor = ({duration}) => {
 
     
     return (
-        <div>
+        <div className='flex justify-center items-center flex-col w-full'>
             {/* Personal info */}
             <PersonalInfo/>
             {/* Add A break */}
