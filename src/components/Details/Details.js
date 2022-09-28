@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Details = ({duration}) => {
+const Details = ({breakTime,duration}) => {
     
     const totalTime = duration.reduce((previousValue,currentValue)=> previousValue + currentValue,0)
 
@@ -16,7 +16,7 @@ const Details = ({duration}) => {
                     </div>
                     <div className="stat">
                         <div className="stat-title">Break Time</div>
-                        <div className="stat-value">89,400 s</div>
+                        <div className="stat-value">{breakTime}s</div>
                     </div>
                     
                 </div>
