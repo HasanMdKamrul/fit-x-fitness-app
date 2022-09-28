@@ -13,11 +13,11 @@ const Details = ({breakTime,duration}) => {
                 <div className="stats shadow text-center mt-2">
                     <div className="stat">
                         <div className="stat-title">Excercise Time</div>
-                        <div className="stat-value">{totalTime}s</div>
+                        <div className="stat-value">{totalTime}m</div>
                     </div>
                     <div className="stat">
                         <div className="stat-title">Break Time</div>
-                        <div className="stat-value">{breakTime ? breakTime : 0}s</div>
+                        <div className="stat-value">{breakTime ? breakTime : 0}m</div>
                     </div>
                     
                 </div>

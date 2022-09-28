@@ -41,7 +41,7 @@ const Home = () => {
         <div>
             <div className='lg:grid lg:grid-cols-12 grid grid-cols-1 mx-5'>
                 <div className='lg:col-start-1 lg:col-end-9 col-start-1 col-end-12'>
-                    <div className='lg:grid lg:grid-cols-3 lg:gap-2 grid grid-cols-1 lg:mx-12 lg:p-0 px-5'>
+                    <div className='lg:grid lg:grid-cols-3 lg:gap-2 grid grid-cols-1 lg:mx-12 lg:p-0 px-5 mt-12'>
                         {
                             activities.map(activity => <Activity handleAddToList={handleAddToList}  key={activity._id} activity={activity}/>)
                         }

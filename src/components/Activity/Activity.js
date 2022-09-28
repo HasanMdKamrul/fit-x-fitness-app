@@ -7,7 +7,7 @@ const Activity = ({handleAddToList,activity,activity:{name,time,picture}}) => {
     return (
         <div>
             <div className="card card-compact bg-base-100 shadow-2xl w-full h-full">
-                <figure><img className='w-full h-fit' src={picture} alt="" /></figure>
+                <figure><img className='w-fit h-fit' src={picture} alt="" /></figure>
                 <div className="card-body w-fit h-fit">
                     <h2 className="card-title text-cyan-400">{name}</h2>
                     <p>Activity Duration: {time} Min</p>
