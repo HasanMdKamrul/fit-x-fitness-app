@@ -8,23 +8,23 @@ module.exports = {
       {
         mytheme: {
         
-"primary": "#ffd787",
+"primary": "#aaf274",
         
-"secondary": "#18ad01",
+"secondary": "#83efb0",
         
-"accent": "#a2d31b",
+"accent": "#81c5ef",
         
-"neutral": "#19252E",
+"neutral": "#272541",
         
-"base-100": "#F7F7F8",
+"base-100": "#34383D",
         
-"info": "#4491E4",
+"info": "#72C3E3",
         
-"success": "#5DEAA8",
+"success": "#19D27B",
         
-"warning": "#EC8A13",
+"warning": "#CD8D04",
         
-"error": "#E44E6C",
+"error": "#F46143",
         },
       },
     ],
