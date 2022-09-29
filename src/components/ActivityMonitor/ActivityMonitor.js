@@ -20,7 +20,7 @@ const ActivityMonitor = ({duration}) => {
 
     useEffect(()=>{
         // ** get data from ls
-        const getTime = localStorage.getItem('breaktime');
+        const getTime = JSON.parse(localStorage.getItem('breaktime'));
         setBreakTime(getTime)
     },[breakTime])
 
